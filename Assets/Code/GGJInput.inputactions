@@ -102,7 +102,7 @@
                     "id": "3c626000-2daa-49fe-a810-cecc30f0d9cc",
                     "path": "<Mouse>/delta",
                     "interactions": "",
-                    "processors": "NormalizeVector2",
+                    "processors": "",
                     "groups": "Keyboard + Mouse",
                     "action": "Rotation",
                     "isComposite": false,

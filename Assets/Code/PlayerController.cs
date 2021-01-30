@@ -6,7 +6,8 @@ using UnityEngine.InputSystem;
 public class PlayerController : MonoBehaviour
 {
     public GGJInput controls;
-    [SerializeField] private float speed; 
+    [SerializeField] private float movementSpeed = 10f;
+    [SerializeField] private float rotationSpeed = 5f;
     private void Awake()
     {
         controls = new GGJInput();
@@ -26,13 +27,13 @@ public class PlayerController : MonoBehaviour
     void Rotate(Vector2 x)
     {
         Debug.Log("Rotate Player " + x);
+        this.transform.Rotate(-Vector3.up* x.x * rotationSpeed *Time.deltaTime);
     }
 
     void Move(Vector2 v)
     {
         Debug.Log("Move Player " + v);
-        
-        this.transform.Translate(new Vector3(v.x / speed, 0,v.y /speed));
+        this.transform.Translate(new Vector3(v.x / movementSpeed, 0,v.y /movementSpeed));
     }
 
 
