@@ -98,59 +98,15 @@
                     "isPartOfComposite": true
                 },
                 {
-                    "name": "2D Vector",
-                    "id": "df774415-6dd2-4946-b85f-2fced9165e18",
-                    "path": "2DVector",
+                    "name": "",
+                    "id": "3c626000-2daa-49fe-a810-cecc30f0d9cc",
+                    "path": "<Mouse>/delta",
                     "interactions": "",
-                    "processors": "",
-                    "groups": "",
+                    "processors": "NormalizeVector2",
+                    "groups": "Keyboard + Mouse",
                     "action": "Rotation",
-                    "isComposite": true,
+                    "isComposite": false,
                     "isPartOfComposite": false
-                },
-                {
-                    "name": "up",
-                    "id": "784393d1-868c-437b-84f0-4ba86b304795",
-                    "path": "<Mouse>/position/y",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Rotation",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "down",
-                    "id": "26f94c6a-e812-4382-adf9-37245f774679",
-                    "path": "<Mouse>/position/y",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Rotation",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "left",
-                    "id": "112b94db-28ba-4f4a-9ea5-bf58ccaa36f4",
-                    "path": "<Mouse>/position/x",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Rotation",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "right",
-                    "id": "2705a2fa-5c1c-49e7-bdf9-4e325070f587",
-                    "path": "<Mouse>/position/x",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Rotation",
-                    "isComposite": false,
-                    "isPartOfComposite": true
                 }
             ]
         },

@@ -6,25 +6,35 @@ using UnityEngine.InputSystem;
 public class PlayerController : MonoBehaviour
 {
     public GGJInput controls;
-
+    [SerializeField] private float speed; 
     private void Awake()
     {
         controls = new GGJInput();
-        controls.Player.Rotation.performed += _ => Rotate(_.ReadValue<Vector2>());
         controls.Player.Hit.performed += h => Hit();
     }
 
 
     void Update()
     {
-        //var move = controls.Player.Movement.ReadValue<Vector2>();
-        //Move(move);
+
+        var move = controls.Player.Movement.ReadValue<Vector2>();
+        Move(move);
+        var rotate = controls.Player.Rotation.ReadValue<Vector2>();
+        Rotate(rotate);
     }
 
-    void Rotate(Vector2 v)
+    void Rotate(Vector2 x)
     {
-        Debug.Log("MovePlayer " + v );
+        Debug.Log("Rotate Player " + x);
     }
+
+    void Move(Vector2 v)
+    {
+        Debug.Log("Move Player " + v);
+        
+        this.transform.Translate(new Vector3(v.x / speed, 0,v.y /speed));
+    }
+
 
     void Hit()
     {
