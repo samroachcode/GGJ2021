@@ -7,35 +7,35 @@ public class CameraFollowScript : MonoBehaviour
 
     public Transform _player;
     [SerializeField]
-    private int xCameraOffset;
+    private float xCameraOffset;
     [SerializeField]
-    private int yCameraOffset;
+    private float yCameraOffset;
     [SerializeField]
-    private int zCameraOffset;
+    private float zCameraOffset;
     [SerializeField]
-    private int xPositionCameraOffset;
+    private float xPositionCameraOffset;
     [SerializeField]
-    private int yPositionCameraOffset;
+    private float yPositionCameraOffset;
     [SerializeField]
-    private int zPositionCameraOffset;
-    void Start()
-    {
-        
-    }
+    private float zPositionCameraOffset;
 
-    // Update is called once per frame
-    void Update()
+
+    void Start()
     {
         LookAtPlayer();
         FollowPlayer();
     }
+
     void LookAtPlayer()
     {
-        this.gameObject.transform.LookAt(new Vector3(_player.position.x + xCameraOffset, _player.position.y+yCameraOffset, _player.position.z+zCameraOffset));
+        this.gameObject.transform.LookAt(new Vector3(_player.position.x + xCameraOffset, _player.position.y + yCameraOffset, _player.position.z + zCameraOffset));
     }
+
     void FollowPlayer()
     {
         this.gameObject.transform.position=new Vector3(_player.position.x + xPositionCameraOffset, _player.position.y + yPositionCameraOffset, _player.position.z + zPositionCameraOffset);
 
+
     }
+
 }

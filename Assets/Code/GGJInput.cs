@@ -113,7 +113,7 @@ public class @GGJInput : IInputActionCollection, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""3c626000-2daa-49fe-a810-cecc30f0d9cc"",
-                    ""path"": ""<Mouse>/delta"",
+                    ""path"": ""<Mouse>/position"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard + Mouse"",
